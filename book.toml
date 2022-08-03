@@ -1,6 +1,6 @@
 [book]
 authors = ["wangxi1998"]
-language = "zh-CN"
+language = "zh"
 multilingual = false
 src = "src"
 title = "exampreparation备考"
