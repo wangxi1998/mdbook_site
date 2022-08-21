@@ -23,11 +23,11 @@ jobs:
       - uses: actions/checkout@v2
 
       # Build markdown files to a static site.
-      - name: Setup mdBook
-        uses: peaceiris/actions-mdbook@v1
-        with:
-          mdbook-version: "latest"
-      - run: mdbook build . --dest-dir ./book # --dest-dir is relative to <dir>
+      # - name: Setup mdBook
+      #   uses: peaceiris/actions-mdbook@v1
+      #   with:
+      #     mdbook-version: "latest"
+      # - run: mdbook build . --dest-dir ./book # --dest-dir is relative to <dir>
 
       # Publish the static site to gh-pages branch.
       - name: Deploy
