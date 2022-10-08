@@ -1,0 +1,372 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>言语理解 - exampreparation备考</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="广东选调考情解读.html"><strong aria-hidden="true">1.</strong> 广东选调考情解读</a></li><li class="chapter-item expanded "><a href="言语理解.html" class="active"><strong aria-hidden="true">2.</strong> 言语理解</a></li><li class="chapter-item expanded "><a href="高频词语.html"><strong aria-hidden="true">3.</strong> 高频词语</a></li><li class="chapter-item expanded "><a href="语文基础知识——标点符号.html"><strong aria-hidden="true">4.</strong> 语文基础知识——标点符号</a></li><li class="chapter-item expanded "><a href="语文基础知识——文言文.html"><strong aria-hidden="true">5.</strong> 语文基础知识——文言文</a></li><li class="chapter-item expanded "><a href="语文基础知识——其他.html"><strong aria-hidden="true">6.</strong> 语文基础知识——其他</a></li><li class="chapter-item expanded "><a href="语文基础知识——病句辨析.html"><strong aria-hidden="true">7.</strong> 语文基础知识——病句辨析</a></li><li class="chapter-item expanded "><a href="语文基础知识——歧义辨析.html"><strong aria-hidden="true">8.</strong> 语文基础知识——歧义辨析</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">exampreparation备考</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="题型"><a class="header" href="#题型">题型</a></h1>
+<ul>
+<li>逻辑填空：考查运用词语进行表达的能力，其中词语搭配和使用范围为考查重点</li>
+<li>片段阅读：集中考查“概括归纳阅读材料中心、主旨”和“判断作者的态度、意图、倾向、目的”两种能力</li>
+<li>语句表达：包含两个重点，一是优化表达的能力（语句排序、语句填空和下文推断题）；二是规范表达的能力（病句辨析和歧义辨析）</li>
+<li>篇章阅读：出现越来越少</li>
+</ul>
+<h1 id="逻辑填空技巧"><a class="header" href="#逻辑填空技巧">逻辑填空技巧</a></h1>
+<h2 id="实词辨析"><a class="header" href="#实词辨析">实词辨析</a></h2>
+<ol>
+<li>感情色彩：注意提炼文中出现的关联词语</li>
+<li>语义轻重：意义相近的词又程度深、性质重与程度浅、性质轻的差别。如：批评与批判，妨碍与妨害。</li>
+<li>表达风格：一是语体风格（口语语体与书面语语体）；二是不同文体（小说、公文、散文等）</li>
+<li>语素差异：不同的词语，尽管意义相近但语义上的侧重点却有所不同，重点观察不同汉字的表达。</li>
+<li>词性功能：指不同词性的词，意义可能相同，但在承担句子成分时的功能却有所不同。通常的差异是动词词性与名词词性。</li>
+<li>搭配范围：不同词语有着不同的搭配对象、使用范围，对与之搭配的词语的意义有着不同的要求。</li>
+<li>语境信息：提示性效果的信息。包括带有一定感情色彩、语义轻重、表达风格或者指向含义的具体词语，也包含表达句子之间逻辑关系的<strong>关联词语</strong>，甚至<strong>标点符号</strong>。</li>
+<li>限定性选项：找“非我不行”的选项，加速判断和进行确认。</li>
+</ol>
+<h2 id="成语辨析"><a class="header" href="#成语辨析">成语辨析</a></h2>
+<p>注意常用成语中意思相近容易混淆的和容易误用的</p>
+<ol>
+<li>成语的感情色彩</li>
+<li>成语的搭配范围：注意是否得当，是否有<strong>语义上的重复、累赘</strong>等。</li>
+<li>成语的句法功能：成语具有一定的句法功能</li>
+</ol>
+<h2 id="关联词辨析"><a class="header" href="#关联词辨析">关联词辨析</a></h2>
+<p>考虑关联词搭配，辨别不同关联词表达的意思。</p>
+<ol>
+<li>并列关系：存在相互补充相互说明的语义关系。<br />
+（1）并存的分句<br />
+（2）相反相对的分句：不是……而是……</li>
+<li>承接关系：连续发生的几个动作或事情，各分句的 先后次序是一定的，不能颠倒。</li>
+<li>递进关系：肯定地表达出前一个分句，接着后一个分句所表达的意思比前一个分句表达的意思要更进一层。<br />
+（1）一级递进：不但……而且……，不仅……还……，不单……也……，不但不……反而……<br />
+（2）二级递进：……甚至……，……更……</li>
+<li>因果关系：总之……，可见……，综上所述说……，概而言之……</li>
+<li>转折关系：<br />
+（1）弱转折：其实……，事实上……，只是……<br />
+（2）强转折：虽然……但是……，然而……，不过……，却……</li>
+<li>条件关系：<br />
+（1）<strong>充分条件</strong>：只要……就……，有……就有……，一旦……就……<br />
+（2）<strong>必要条件</strong>：只有……才……，除非……才……，不……不……，必须……<br />
+（3）周遍条件：不管……也……，无论……都……<br />
+（4）假设条件：如果……就……，假如……那么……，若是……只好……</li>
+<li>让步关系：前一个分句说出一个未然性的事实并作出让步，后一个分句从相反的方向说出正面的意思。即使……也……，纵然……也……，哪怕……也……</li>
+<li>取舍关系：两个分句表示不同的事物，说话者必须取一舍一。<br />
+（1）取前舍后：宁可……也不……<br />
+（2）舍前取后：与其……不如……</li>
+</ol>
+<h1 id="片段阅读技巧"><a class="header" href="#片段阅读技巧">片段阅读技巧</a></h1>
+<h2 id="替换压缩法"><a class="header" href="#替换压缩法">替换压缩法</a></h2>
+<p>统一替换：能否=也许/差异=多样性<br />
+精简压缩</p>
+<h2 id="转折引导法"><a class="header" href="#转折引导法">转折引导法</a></h2>
+<p>（1）弱在前，强在后。重点常常在后半句的转折上。<br />
+（2）强在前，若在后。观察<strong>对策句</strong>出现的位置，对策句在哪句，哪句就是<strong>重点</strong>。</p>
+<h2 id="结论引导法"><a class="header" href="#结论引导法">结论引导法</a></h2>
+<p>（1）正常语序中，强调的一般是结论。<br />
+（2）“之所以……是因为……”重点落在对原因的解释说明上，符合汉语核心语义后置。<br />
+（3）隐性的结论引导词：导致、造成、致使、使得。</p>
+<h2 id="递进引导法"><a class="header" href="#递进引导法">递进引导法</a></h2>
+<p>不要被第一句话误导，第一句话并不一定是重点。</p>
+<h2 id="必要条件法"><a class="header" href="#必要条件法">必要条件法</a></h2>
+<p>主题句常常出现在表示必要条件关系是关联词后。</p>
+<h2 id="并列概括法"><a class="header" href="#并列概括法">并列概括法</a></h2>
+<h2 id="背景铺垫法"><a class="header" href="#背景铺垫法">背景铺垫法</a></h2>
+<p><strong>通常文段前面的大背景、大趋势仅仅是为了引出后面的主题。明确何为背景，何为观点</strong>。主要存在三种介绍背景的方式：①形势分析：随着……②时间状语：当前……③下定义。<br />
+有的文段存在非常长的铺垫，最后一句才点明观点。主要是强调观点的重要性，起解释作用。<br />
+分清前文铺垫与对策，一般重点都是对策。</p>
+<h2 id="援引观点法"><a class="header" href="#援引观点法">援引观点法</a></h2>
+<p>（1）正向援引：“因此”、“所以”、“可见”、“总之”<br />
+（2）反向援引：“但是”、“事实上”</p>
+<h2 id="举例论证法"><a class="header" href="#举例论证法">举例论证法</a></h2>
+<p>举例本身的表述并不重要，它所证明的观点非常重要，围绕例子进行表述的选项都是干扰选项。</p>
+<h2 id="原因解释法"><a class="header" href="#原因解释法">原因解释法</a></h2>
+<p>通常原因的阐述是为了让读者更信服其所证明的结论。</p>
+<ul>
+<li>阐明原因——引出观点</li>
+<li>点明观点——阐明原因</li>
+<li>点明观点——阐明原因——重申观点</li>
+</ul>
+<h2 id="正反面论证法"><a class="header" href="#正反面论证法">正反面论证法</a></h2>
+<p>根据反面论证出现的位置来判断之前的语句即为文段的主题句。</p>
+<ul>
+<li>正+反：反面论证之前会出现正面的论点，常有“否则”、“不然”一类的引导词出现。</li>
+<li>（正）+反：反面论证之前省略正面的论点，常有“如果……不……”“如果……没有……”等假设条件句出现。通过反面论证推测论点。
+认清谈论的主体是什么。</li>
+</ul>
+<h2 id="表达倾向法"><a class="header" href="#表达倾向法">表达倾向法</a></h2>
+<p>答案的表达倾向要与原文一致，换而言之，不是让你去做判断。</p>
+<h2 id="标点符号法"><a class="header" href="#标点符号法">标点符号法</a></h2>
+<p>需要注意的标点符号有：冒号、破折号、分号、顿号、双引号、括号、问号。</p>
+<h2 id="宏观指代法"><a class="header" href="#宏观指代法">宏观指代法</a></h2>
+<p>代词引导主题句前提是：代词指代的是前文的宏观内容。</p>
+<h2 id="快速破题之排除法"><a class="header" href="#快速破题之排除法">快速破题之排除法</a></h2>
+<ol>
+<li>选项差异法：弄清哪个更符合对原文的压缩与替换。</li>
+<li>主体排除法，一般主体是高频词或文中一直在围绕阐述的核心话题。一个高频词：正确答案ui原文主体保持高度一致；两个高频词：讨论两个高频词之间的关系。</li>
+<li>排同求异法：表述意思相同或十分相近的选项予以排除。</li>
+<li>相对绝对法：通常过于绝对的选项不是正确答案。</li>
+</ol>
+<h1 id="主旨概括题技巧"><a class="header" href="#主旨概括题技巧">主旨概括题技巧</a></h1>
+<p>观察文段论述的层次结构，理清论述的脉络，明确包含关系，确定文段重点，始终秉持着寻找解决问题的<strong>对策或核心观点</strong>这一原则不动摇。</p>
+<h2 id="一总分总"><a class="header" href="#一总分总">（一）总——分——总</a></h2>
+<ul>
+<li>提出问题——分析问题——解决问题<br />
+行文一般为：问题出现的原因、问题存在的现状、问题引发的后果等，最后提出解决问题的办法或对策，重点放在 问题解决上。</li>
+<li>提出观点——解释说明——重审观点</li>
+</ul>
+<h2 id="二总分"><a class="header" href="#二总分">（二）总——分</a></h2>
+<ul>
+<li>提出观点——解释说明</li>
+<li>提出观点——举例论证</li>
+</ul>
+<h2 id="三分总"><a class="header" href="#三分总">（三）分——总</a></h2>
+<ul>
+<li>列举现象——提出观点</li>
+<li>列举现象——解决问题</li>
+</ul>
+<h2 id="四分总分"><a class="header" href="#四分总分">（四）分——总——分</a></h2>
+<p>背景——观点/对策——论证说明</p>
+<h1 id="意图判断题技巧"><a class="header" href="#意图判断题技巧">意图判断题技巧</a></h1>
+<p>把握作者的目的、意图、初衷时要结合原文进行引申，寻找原文的”言外之意“，但是注意不要过度猜测，造成无中生有。</p>
+<ul>
+<li>社会中的消极现象的阐述可能包含解决问题的语句或进行对策的推断。</li>
+<li>陈述社会问题表现，常为中性表达，无褒贬义。</li>
+<li>排除表义肤浅不深刻、表述内容过于绝对与表述内容不符合客观事实、生活常识或社会主旋律的选项。</li>
+<li>并非呼吁的选项一定是答案。</li>
+</ul>
+<h1 id="态度观点题技巧"><a class="header" href="#态度观点题技巧">态度观点题技巧</a></h1>
+<p>有的文段只是援引他人观点，或是对某一事物、事件或者社会现象进行客观陈述，没有对其进行主观上的评价。<br />
+有的文段涉及几个问题，作者对于某一问题存在明确的观点和评价，对于另一问题未作任何评价，注意区分。</p>
+<h1 id="细节理解题常见陷阱"><a class="header" href="#细节理解题常见陷阱">细节理解题常见陷阱</a></h1>
+<h2 id="无中生有"><a class="header" href="#无中生有">无中生有</a></h2>
+<h2 id="概念混搭"><a class="header" href="#概念混搭">概念混搭</a></h2>
+<h2 id="曲解文意"><a class="header" href="#曲解文意">曲解文意</a></h2>
+<ol>
+<li>偷换时间：区分已发生、现在进行与未发生。</li>
+<li>偷换数量：扩大或是缩小。</li>
+<li>偷换话题：确保选项和原文谈论的是同一件事情，且没有扩大或缩小话题。</li>
+<li>偷换概念：通过将表述要件中的主客体或者动作、状态加以偷换。</li>
+<li>偷换逻辑：不能将因果关系、条件关系偷换为并列关系，不能将因果倒置或者强加因果，不能将充分条件和必要条件混淆，造成条件关系的内部混乱。</li>
+<li>偷换确定性表述与不确定性表述</li>
+</ol>
+<h1 id="词语代指题技巧"><a class="header" href="#词语代指题技巧">词语代指题技巧</a></h1>
+<p>秉承“就近原则”和“小语境”的解题思路。</p>
+<h1 id="语句排序题技巧"><a class="header" href="#语句排序题技巧">语句排序题技巧</a></h1>
+<p>断定发语词，秉持“少数服从多数”原则；通过关联词、时空顺序、重复话题、逻辑关系验证连贯性。</p>
+<h1 id="语句填空题技巧"><a class="header" href="#语句填空题技巧">语句填空题技巧</a></h1>
+<p>坚持“连贯性”原则不变。</p>
+<h2 id="居首类"><a class="header" href="#居首类">居首类</a></h2>
+<p>空白处是开篇的总论点，或者引出下文话题的表述。</p>
+<h2 id="居中类"><a class="header" href="#居中类">居中类</a></h2>
+<p>秉持承上启下的连贯性原则。</p>
+<h2 id="居末类"><a class="header" href="#居末类">居末类</a></h2>
+<p>可能是对上文的总结概括，可能是对上文就近句的衔接。</p>
+<h1 id="下文推断题技巧"><a class="header" href="#下文推断题技巧">下文推断题技巧</a></h1>
+<p>首先将文段表述中已有的内容进行排除。其次，考虑其内容和逻辑上的完整性和连贯性，最后以读者的视角去揣度。<br />
+注意改文段谈论的主题，寻找文段隐含的重要信息，包括关联词语、时态、数量等方面所圈定的范围或条件，确保选项与原文的高度一致。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="广东选调考情解读.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="高频词语.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="广东选调考情解读.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="高频词语.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="lunr.zh.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
