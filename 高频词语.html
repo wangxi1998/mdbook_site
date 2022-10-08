@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>高频词语 - exampreparation备考</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="广东选调考情解读.html"><strong aria-hidden="true">1.</strong> 广东选调考情解读</a></li><li class="chapter-item expanded "><a href="言语理解.html"><strong aria-hidden="true">2.</strong> 言语理解</a></li><li class="chapter-item expanded "><a href="高频词语.html" class="active"><strong aria-hidden="true">3.</strong> 高频词语</a></li><li class="chapter-item expanded "><a href="语文基础知识——标点符号.html"><strong aria-hidden="true">4.</strong> 语文基础知识——标点符号</a></li><li class="chapter-item expanded "><a href="语文基础知识——文言文.html"><strong aria-hidden="true">5.</strong> 语文基础知识——文言文</a></li><li class="chapter-item expanded "><a href="语文基础知识——其他.html"><strong aria-hidden="true">6.</strong> 语文基础知识——其他</a></li><li class="chapter-item expanded "><a href="语文基础知识——病句辨析.html"><strong aria-hidden="true">7.</strong> 语文基础知识——病句辨析</a></li><li class="chapter-item expanded "><a href="语文基础知识——歧义辨析.html"><strong aria-hidden="true">8.</strong> 语文基础知识——歧义辨析</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">exampreparation备考</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <ol>
+<li>差强人意：大体上使人满意。</li>
+<li>革故鼎新：旧指朝政变革活改朝换代。现泛指除去旧的，建立新的。</li>
+<li>寥寥无几：形容稀少，没有几个。</li>
+<li>趋之若鹜：指像鸭子一样成群地跑过去，比喻争着追逐不好的事物。（贬）</li>
+<li>群策群力：大家共同出主意、出力量。</li>
+<li>集思广益：集中群众的智慧，广泛吸收有益的意见。</li>
+<li>不绝如缕：指只有一根细线连系着，似断非断比喻事情及其危急，后也比喻技艺等方面继承人稀少。</li>
+<li>投射：指①对着目标扔或掷；②目光或光线等射向。</li>
+<li>阐发：阐明并发挥；阐述：侧重阐明陈述；阐释：侧重解释表明。</li>
+<li>金玉良言：比喻非常宝贵的劝告。（劝告意味）</li>
+<li>掷地有声：形容文辞优美，也形容话语铿锵有力。</li>
+<li>振聋发聩：比喻唤醒糊涂麻木的人。</li>
+<li>谋划：指谋略，打算。</li>
+<li>考验：考查验证；拷问，审讯拷打。</li>
+<li>刻画：指用语言或其他艺术手段表现人物，景色等。</li>
+<li>描绘：指绘画，描写。强调生动形象的描写。</li>
+<li>注释：指注解，用简明文字解释书刊中的字、词、句；注脚：指解释字句的文字，是名词；解释：指说明含义、原因、理由等；阐释：指阐述并解释。</li>
+<li>汗牛充栋：指用牛运书，牛都要累得出汗；用屋子放书，整个屋子都要填满。形容藏书很多。</li>
+<li>鳞次栉比：指像鱼鳞和梳子齿那样有次序地排列着，多用来形容房屋或船只等排列得很密很整齐。</li>
+<li>方兴未艾：事物正在蓬勃发展，不会很快终止。</li>
+<li>如火如荼：形容军容之盛，现用来形容大规模的行动气势旺盛，气氛热烈。</li>
+<li>经久不衰：精神饱满的状态，身体健壮的外表；形容某事或某人经历很长时间依旧保持较高的旺盛状态。</li>
+<li>筚门圭窦：形容贫苦人家的住处。</li>
+<li>桑枢瓮牖：比喻贫苦之家。（you）</li>
+<li>兰艾同焚：比喻好的坏的同归于尽。</li>
+<li>始作俑者：第一个制作用来殉葬的木偶、土偶的人，比喻恶劣风气的开创者。（贬）</li>
+<li>沸反盈天：形容人声喧闹。</li>
+<li>沸沸扬扬：形容人声喧闹扰，<strong>议论纷纷</strong>。</li>
+<li>层现叠出：指接连不断出现，比喻事物很多。</li>
+<li>不合时宜：指不适合时代形势的需要，<strong>也指不合世俗习尚</strong>。</li>
+<li>言不及义：指净说些无聊的话，没有一句正经的。</li>
+<li>司空见惯：指某事常见，不足为奇。</li>
+<li>层出不穷：指接连不断出现，没有穷尽。<strong>有时喻指事物变幻之快</strong>。</li>
+<li>一蹴而就：指踏一步就成功，形容事情轻而易举，一下子就成功。</li>
+<li>相得益彰：指两个人或者两件事物<strong>相互配合</strong>，双方的能力和作用更加能显示出来。</li>
+<li>珠联璧合：比喻杰出的人才和美好的事物聚集在一起的美好样子。</li>
+<li>源远流长：比喻历史悠久。</li>
+<li>积厚流光：积累的功业越深厚，则流传给后人的恩德越广。</li>
+<li>历史悠久：指某物再历史上已经有很深的历史背景。</li>
+<li>年深日久：形容时间久远。</li>
+<li>历久弥新：指经历长久的时间而更加鲜活，更加有活力，更显价值。</li>
+<li>相辅相成：指两件事物<strong>相互配合</strong>，<strong>缺一不可</strong>。</li>
+<li>交相辉映：指各种光亮、色彩等互相映照，若形容二者关系，多用于光亮、色彩等互相映照。</li>
+<li>天衣无缝：比喻事物周密完善，找不出什么毛病。</li>
+<li>荣辱与共：光荣与耻辱共同分享与承担。</li>
+<li>风雨同舟：比喻共同经历患难。</li>
+<li>血脉相连：比喻关系非常密切，不可分离。</li>
+<li>不言而喻；不用说就可以明白。形容道理很明显。</li>
+<li>无需赘言：不用多说。</li>
+<li>博大精深：多形容理论、学识、思想、作品等广博丰富，深奥精微。</li>
+<li>根深蒂固：比喻根基深厚牢固，不可动摇。</li>
+<li>应运而生：旧指应天命而产生，现指适应时机而产生。</li>
+<li>蔚为大观：指丰富多彩，成为盛大的景象。</li>
+<li>浮光掠影：比喻对事物观察不细致，印象不深。</li>
+<li>蜻蜓点水：比喻做事肤浅不深入。</li>
+<li>浅尝辄止：略微尝试一下就停下来，指对知识、问题等不做深入研究。</li>
+<li>独一无二：没有相同的或没有可以相比的。</li>
+<li>无与伦比：指事物<strong>非常完美</strong>，灭有能跟它相比的。</li>
+<li>禀赋：指一种或几种与生俱来的优秀品质。</li>
+<li>昙花一现：比喻美好的事物或景象出现了一下很快就消失了。</li>
+<li>分裂：指<strong>整体</strong>的事物分开；脱节：事物失掉联系，不相<strong>衔接</strong>；偏离：<strong>离开正确</strong>的道路和方向。</li>
+<li>振聋发聩：比喻用语言文字唤醒糊涂麻木的人。</li>
+<li>鞭辟入里：鞭打触及衣服的最里层。形容做学问切实，也形容分析透彻，切中要害。</li>
+<li>醍醐灌顶：比喻听了高明的意见使人受到很大启发。</li>
+<li>缘木求鱼：比喻<strong>方向或办法不对</strong>，不可能达到目的。</li>
+<li>磨砖做镜：强调不能成功。</li>
+<li>南辕北辙：强调行动与<strong>目的</strong>相反。</li>
+<li>舍本逐末：强调主次、轻重 颠倒。</li>
+<li>息息相关：形容彼此的关系非常密切。</li>
+<li>休戚相关：形容关系密切，<strong>利害</strong>相关。含有同甘共苦、利害一致的意思，且适用面比较窄，一般只能指有福祸可言的人、集团、国家等相互间的关系。</li>
+<li>引人入胜：指吸引进入美妙的境界，现多用来指风景或文艺作品特别吸引人。</li>
+<li>脍炙人口：比喻好的诗文或事物为众人所<strong>称赞</strong>。</li>
+<li>惹人耳目：比喻用假象迷惑人、欺骗人。</li>
+<li>津津有味：形容趣味很浓厚或很有滋味的样子，也指吃得很有味道或谈得很有兴趣，<strong>一般做状语，不能修饰“故事情节”</strong>。</li>
+<li>持之以恒：长久坚持下去。</li>
+<li>一孔之见：比喻片面的见解。</li>
+<li>功亏一篑：比喻做事情只差最后一点没能<strong>完成</strong>或<strong>成功</strong>。</li>
+<li>食前方丈：指吃饭时面前一丈见方的地方摆满了食物，形容吃得阔气。</li>
+<li>畏蒽不前：表示畏惧退缩，不敢向前。（en）</li>
+<li>举重若轻：比喻能力强，能够轻松胜任繁重的工作或处理困难的问题。</li>
+<li>如鱼得水：比喻得到跟自己十分投合的人或对自己很合适的环境。</li>
+<li>轻车熟路：比喻事情又熟悉又容易。</li>
+<li>得心应手：心手相应，运用自如。<strong>多形容技艺纯熟</strong>。</li>
+<li>有的放矢：比喻说话做事有明确的目的性和针对性。</li>
+<li>两面三刀：指耍两面手法。</li>
+<li>刀头舔蜜：比喻利少害多，也指贪财好色，不顾性命。</li>
+<li>代人捉刀：指代别人做事，多指写文章。</li>
+</ol>
+<p>“提炼”与“方案”搭配不当。<br />
+在实践中经受考验，磨练意志，增长才干。<br />
+“撕心裂肺”用多来形容哭声，<strong>不能用来形容痛苦</strong>。<br />
+恢弘壮丽：多用于具体物体，例如建筑物、广场等。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="言语理解.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="语文基础知识——标点符号.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="言语理解.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="语文基础知识——标点符号.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="lunr.zh.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
